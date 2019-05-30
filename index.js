@@ -5,13 +5,15 @@ const express = require("express"),
   Models = require("./models.js"),
   passport = require("passport"),
   cors = require("cors"),
-  validator = require("express-validator");
+  validator = require("express-validator"),
+  path = require('path');
 require("./passport");
 
 const app = express(),
   Movies = Models.Movie,
   Users = Models.User;
 
+app.use(express.static(path.join(__dirname, 'client-2/build')));
 app.use(bodyParser.json());
 
 //Server-side validation for the app
@@ -351,8 +353,11 @@ app.delete(
 );
 
 // default response when request hits the root folder
-app.get("/", function (req, res) {
-  res.send("Welcome to the world of CineStock!");
+// app.get("/", function (req, res) {
+//   res.send("Welcome to the world of CineStock!");
+// });
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'client-2/build', 'index.html'));
 });
 
 //access requested file from "public" folder
