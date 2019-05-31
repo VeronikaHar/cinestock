@@ -17,7 +17,7 @@ function GenreView(props) {
       <div className="container">
         <div className="label h5">{props.genreName}</div>
         <div className="value">{genre.Genre.Description}</div>
-        <Link to={`/movies`}>
+        <Link to={`/movielist`}>
           <Button className="back-button" variant="primary">
             Back to movie list
           </Button>

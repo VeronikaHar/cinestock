@@ -21,7 +21,7 @@ function DirectorView(props) {
           {props.directorName} ({director.Director.Birth} - {death})
         </div>
         <div className="value">{director.Director.Bio}</div>
-        <Link to={`/movies`}>
+        <Link to={`/movielist`}>
           <Button className="back-button" variant="primary">
             Back to movie list
           </Button>

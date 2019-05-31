@@ -28,7 +28,7 @@ function ProfileView(props) {
     if (movie) {
       movieTitle.push(
         <div id={movie._id}>
-          <Link to={`/movies/${movie._id}`}>
+          <Link to={`/movielist/${movie._id}`}>
             <Button variant="link" className="movie-link">
               {movie.Title}
             </Button>
@@ -78,7 +78,7 @@ function ProfileView(props) {
       <div className="container">
         <div className="label h5">Favorite movies</div>
         {movieTitle}
-        <Link to={`/movies`}>
+        <Link to={`/movielist`}>
           <Button className="update-btn" variant="link">
             Add/remove movies...
           </Button>

@@ -50,7 +50,7 @@ function MovieView(props) {
           </div>
         </Figure.Caption>
       </Figure>
-      <Link to={`/movies`}>
+      <Link to={`/movielist`}>
         <Button className="back-button" variant="primary">
           Back to movies
         </Button>

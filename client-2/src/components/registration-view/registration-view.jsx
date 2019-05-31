@@ -45,7 +45,7 @@ function RegistrationView(props) {
           .then(response => {
             const data = response.data;
             props.onLoggedIn(data);
-            window.open("/movies", "_self");
+            window.open("/movielist", "_self");
           });
       })
       .catch(e => {

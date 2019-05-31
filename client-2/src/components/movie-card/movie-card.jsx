@@ -39,9 +39,9 @@ export class MovieCard extends React.Component {
       axios
         .post(
           "https://cinestock.herokuapp.com/users/" +
-            user +
-            "/favorites/" +
-            movieId,
+          user +
+          "/favorites/" +
+          movieId,
           {},
           {
             headers: { Authorization: `Bearer ${token}` }
@@ -57,9 +57,9 @@ export class MovieCard extends React.Component {
       axios
         .delete(
           "https://cinestock.herokuapp.com/users/" +
-            user +
-            "/favorites/" +
-            movieId,
+          user +
+          "/favorites/" +
+          movieId,
           {
             headers: { Authorization: `Bearer ${token}` }
           }
@@ -96,7 +96,7 @@ export class MovieCard extends React.Component {
           </div>
           <Card.Title>{movie.Title}</Card.Title>
           <Card.Text>{movie.Description}</Card.Text>
-          <Link to={`/movies/${movie._id}`}>
+          <Link to={`/movielist/${movie._id}`}>
             <Button variant="link">Read more...</Button>
           </Link>
         </Card.Body>
