@@ -83,6 +83,8 @@ body {
 }
 
 .nav-tabs .nav-link:active,
+.nav-tabs .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.active,
 .nav-link:active {
     background-color: #BD2099;
     color: #fff;
