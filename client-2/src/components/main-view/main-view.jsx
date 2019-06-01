@@ -147,7 +147,7 @@ export class MainView extends React.Component {
                   <Nav.Link href="/userprofile">Your account</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link as={NavLink} to={process.env.PUBLIC_URL + "/movielist"}>Movies</Nav.Link>
+                  <Nav.Link href="/movielist">Movies</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Navbar.Collapse>
