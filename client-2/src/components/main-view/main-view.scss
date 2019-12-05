@@ -96,6 +96,14 @@ body {
     font-size: 16px;
     margin-left: 35%;
     margin-top: 3%;
+    background-color: #bd2099;
+    color: #fff;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+    background-color: #fff;
+    color: #bd2099;
 }
 
 @media all and (max-width: 576px) {
