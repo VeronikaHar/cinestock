@@ -1,6 +1,5 @@
 .filter-group {
     width: 110%;
-    justify-content: center;
     margin: auto;
     margin-top: 3%;
     padding-left: 15%;
@@ -20,8 +19,9 @@
 
 select.form-control {
     width: 25%;
-    font-weight: 600;
-    padding-left: 8%;
+    padding-left: 3%;
+    color: #fff;
+    background-color: #BD2099;
 }
 
 select.form-control:hover,
@@ -42,13 +42,9 @@ option {
     color: #BD2099;
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 620px) {
     .filter-group {
         width: 130%;
         padding-left: 2%;
-    }
-
-    select.form-control {
-        padding-left: 3%;
     }
 }

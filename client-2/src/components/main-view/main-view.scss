@@ -44,29 +44,24 @@ body {
 .navbar {
     background-color: #172742;
     margin: auto;
-    margin-left: -2%;
     padding: 0%;
-    width: 103%;
+    width: 100%;
     padding-right: 3%;
-    height: 65px;
     justify-content: space-between;
 }
 
 .navbar-collapse {
     background-color: #172742;
-    min-width: 104%;
-    margin: 0px;
-    height: 65px;
+    min-width: 100%;
     right: -3%;
     position: relative;
-    padding: 1px;
+    padding-top: 8px;
 }
 
 .navbar-nav {
     white-space: nowrap;
     width: 65%;
-    margin-left: auto;
-    margin-right: 0%;
+    margin-left: 35%;
     border-bottom-color: #BD2099;
 }
 
@@ -80,6 +75,7 @@ body {
 .nav-tabs .nav-link:focus {
     border-color: #BD2099;
     background-color: #172742;
+    color: #fff;
 }
 
 .nav-tabs .nav-link:active,
@@ -106,7 +102,7 @@ body {
     color: #bd2099;
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 620px) {
     * {
         font-size: 16px;
     }
