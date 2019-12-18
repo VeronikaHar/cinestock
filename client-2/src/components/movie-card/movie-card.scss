@@ -1,14 +1,21 @@
 .card {
-    min-width: 350px;
+    min-width: 320px;
     max-width: 400px;
-    padding: 2%;
+    padding: 1.5%;
     border-radius: 0%;
-    margin: 3%;
+}
+
+.card-body {
+    padding: 10px !important;
 }
 
 .card-deck {
     justify-content: center;
-    margin: auto;
+    margin: 10px auto;
+}
+
+.card-deck .card {
+    margin: 7px !important;
 }
 
 .card-img-top {
@@ -57,10 +64,6 @@
 
 @media all and (max-width: 620px) {
     .card {
-        margin: auto;
-    }
-
-    .card-deck {
-        margin-top: 5%;
+        margin: 7px auto;
     }
 }
