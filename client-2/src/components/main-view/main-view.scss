@@ -54,7 +54,8 @@ body {
     background-color: #172742;
     min-width: 100%;
     position: relative;
-    padding-top: 8px;
+    padding: 8px 0 0 8px;
+    height: fit-content!important;
 }
 
 .navbar-nav {

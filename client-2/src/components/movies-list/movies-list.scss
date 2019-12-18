@@ -1,14 +1,12 @@
 .filter-group {
-    width: 110%;
-    margin: auto;
-    margin-top: 3%;
-    padding-left: 15%;
+    width: 70%;
+    margin: 5% auto 2%;
 }
 
 .filter {
     margin: 0%;
     display: inline-block;
-    width: 50%;
+    width: 75%;
     border-radius: 0px;
     font-size: 16px;
     border-color: #BD2099;
@@ -26,7 +24,6 @@ select.form-control {
 
 select.form-control:hover,
 select.form-control:focus {
-    width: 25%;
     border-color: #BD2099;
     background-color: #172742;
     color: #BD2099;
@@ -44,7 +41,15 @@ option {
 
 @media all and (max-width: 620px) {
     .filter-group {
-        width: 130%;
-        padding-left: 2%;
+        width:100%;
+        min-width: 320px;
+    }
+
+    .filter {
+        width: 70%;
+    }
+
+    select.form-control {
+        width: 30%;
     }
 }
