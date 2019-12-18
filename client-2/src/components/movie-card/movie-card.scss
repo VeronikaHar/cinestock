@@ -15,7 +15,7 @@
 }
 
 .card-deck .card {
-    margin: 7px !important;
+    margin: 7px;
 }
 
 .card-img-top {
@@ -63,7 +63,7 @@
 }
 
 @media all and (max-width: 620px) {
-    .card {
+    .card-deck .card {
         margin: 7px auto;
     }
 }
