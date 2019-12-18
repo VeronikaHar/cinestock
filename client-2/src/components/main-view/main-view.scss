@@ -53,7 +53,6 @@ body {
 .navbar-collapse {
     background-color: #172742;
     min-width: 100%;
-    right: -3%;
     position: relative;
     padding-top: 8px;
 }
@@ -75,7 +74,7 @@ body {
 .nav-tabs .nav-link:focus {
     border-color: #BD2099;
     background-color: #172742;
-    color: #fff;
+    color: #fff !important;
 }
 
 .nav-tabs .nav-link:active,
@@ -90,8 +89,7 @@ body {
 .logout-btn {
     white-space: nowrap;
     font-size: 16px;
-    margin-left: 35%;
-    margin-top: 3%;
+    margin-left: 15%;
     background-color: #bd2099;
     color: #fff;
 }
@@ -112,14 +110,17 @@ body {
     }
 
     .navbar-collapse {
-        top: -8%;
-        height: auto;
-        right: 0%;
+        padding: 0;
     }
 
-    .navbar-toggler.collapsed,
-    .navbar-toggler.collapsed:focus {
-        border: 0.5px solid #BD2099;
+    .navbar-nav {
+        width: 100%;
+        margin: auto;
+    }
+
+    .navbar-toggler,
+    .navbar-toggler.collapsed {
+        border: 1px solid #bd2099 !important;
     }
 
     .nav-link.disabled {
